@@ -256,10 +256,12 @@ header{
 
 
 /* ======== ABOUT ME SECTION =========== */
-.aboutmeSection{
+.aboutmeSection {
     margin-top: 309px;
     margin-left: 4%;
+    padding-top: 90px;
     min-height: 100vh;
+    background: #fffccb9c;
 }
 .aboutme-grid-container{
     display:flex;
@@ -285,7 +287,10 @@ header{
 /* ============SKILLS SECTION ============== */
 .skills-section{
     min-height: 100vh;
-    background-color:#3498db87;
+    background:linear-gradient(rgb(0 0 0 / 81%), rgb(0 0 0 / 32%)), url("../img/skillsBG.jpg");
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center;
 }
 .skills-section h1{
     padding-top: 90px;
@@ -304,7 +309,7 @@ header{
 
 
 .skill-details-container{
-    margin-top: 60px;
+    margin-top: 37px;
     font-weight: 700;
     font-size: 17px;
     letter-spacing: 1px;
@@ -333,28 +338,28 @@ header{
     -o-border-radius: 10px;
 }
 .skills-scale-fill-html{
-    width: 97%;
-    background-color: #00cecb80;
+    width: 90%;
+    background-color: #00cecbbc;
 }
 .skills-scale-fill-css{
-    width: 95%;
-    background-color: #ff757577;
+    width: 85%;
+    background-color: #ff7575ba;
 }
 .skills-scale-fill-js{
-    width: 85%;
-    background-color: #a29bfe79;
+    width: 75%;
+    background-color: #a29bfeb6;
 }
 .skills-scale-fill-php{
-    width: 60%;
-    background-color: #ff525282;
+    width: 50%;
+    background-color: #ff5252ba;
 }
 .skills-scale-fill-bootstrap{
-    width: 89%;
-    background-color: #c5e5388e;
+    width: 79%;
+    background-color: #c5e538bc;
 }
 .skills-scale-fill-jquery{
-    width: 85%;
-    background-color: #12cbc582;
+    width: 75%;
+    background-color: #12cbc5bf;
 }
 .skills-para{
     margin-top: 6%;
