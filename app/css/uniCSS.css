@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-rendering:optimizeSpeed;
+}
+
+
+html, body{
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+.content-container{
+    padding-left: 229px;
+}
+h1{
+    font-size: 84px;
+}
+.section-title{
+    font-weight: 500;
+    color: #2980B9;
+}
+
+
+
+
+/* ===============
+MEDIA QUERIES
+======================*/
+@media only screen and (max-width: 1000px){
+    .content-container{
+        padding-left: 11px;
+    }
+}
+@media only screen and (max-width: 600px){
+    h1{
+        font-size: 48px;
+    }
+    
+}
