@@ -28,7 +28,6 @@ for(i =0; i < projectHeight.length; i++){
         projectHeightAll.style.height = imgHeight + "px";
     });
     
-    console.log(imgHeight);
 }
 
 

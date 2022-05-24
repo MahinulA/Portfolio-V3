@@ -103,10 +103,11 @@ header{
     -o-transform: translateY(-50%);
 }
 .header-content-section h1{
-    font-weight: 400;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 .self-intro-header, .job-title-header{
-    font-size: 19px;
+    font-size: 16px;
 }
 .self-intro-header{
     margin-top: 51px;

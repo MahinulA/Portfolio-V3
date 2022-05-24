@@ -56,7 +56,7 @@
 
             <div class="header-content-section">
                 <h1>Hello,</h1>
-                <h1>I'm a Web Application Developer</h1>
+                <h1> <i class="fa-solid fa-angle-right"></i>  <span class="js-typed"><!--Input will be given by JavaScript Library --></span></h1> 
 
                 <!-- self intro -->
                 <p class="self-intro-header"><i>Mahinul Mostafa Abid</i></p>
@@ -210,6 +210,34 @@
     <footer style="text-align: center; font-weight: 700; padding: 20px 0;">
         Designed and developed by Mahinul 	&copy; 2022
     </footer>
+
+
+
+    <!-- LIBRARY TYPED.JS WORK HERE -->
+    <script src="./node_modules/typed.js/lib/typed.min.js"></script>
+    <script>
+        var options = {
+            strings: ['First ignored Sentence', 
+                "I'm a Front-end developer", 
+                "Developing Optimized Website",
+                "Experienced in HTML, CSS",
+                "Experienced in JavaScript",   
+                "Experienced in SCSS",   
+                "Experienced in Bootstrap, jQuery",
+                "Experienced in PHP"
+            ],
+            typeSpeed: 60,
+            loop:true,
+            backSpeed: 20,
+            showCursor:false
+        };
+
+        var typed = new Typed('.js-typed', options);
+    </script>
+
+
+
+
     <script src="./app/js/main.js"></script>
 </body>
 </html>
