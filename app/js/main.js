@@ -87,3 +87,27 @@ skillsbtn.addEventListener("click", ()=>{
     hidenShow(header, aboutmeSection, sectionPortfolio, skillSection);
     loadingScreenfunc();
 });
+
+
+
+// CHANGING HEADER BACKGROUND IMAGE
+let headerElement = document.querySelector(".header-main-container");
+let headerBGcount = 1;
+let headerBGImgArray = ['./app/img/sliderHeader/sliderHeader1.jpg', './app/img/sliderHeader/sliderHeader2.jpg', './app/img/sliderHeader/sliderHeader3.jpg' , './app/img/sliderHeader/sliderHeader4.jpg' ];
+setInterval(() => {
+    if(headerBGcount >= 0 && headerBGcount < 3){
+        headerElement.style.background = "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('"  +  headerBGImgArray[headerBGcount] + "')";
+        headerElement.style.backgroundSize = "cover";
+        headerElement.style.backgroundAttachment = "fixed";
+        headerElement.style.backgroundPosition = "center";
+        headerElement.style.transition = "background 0.4s";
+        headerBGcount++;
+    }else if(headerBGcount == 3){
+        headerElement.style.background = "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('"  +  headerBGImgArray[headerBGcount] + "')";
+        headerElement.style.backgroundSize = "cover";
+        headerElement.style.backgroundAttachment = "fixed";
+        headerElement.style.backgroundPosition = "center";
+        headerElement.style.transition = "background 0.4s";
+        headerBGcount =0;
+    }
+}, 8000);
