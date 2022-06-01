@@ -29,7 +29,9 @@ h1{
 }
 .section-title{
     font-weight: 500;
-    color: #2980B9;
+    /* color: #2980B9; */
+    color: #6cb9ec;
+    font-weight: 700;
 }
 
 
