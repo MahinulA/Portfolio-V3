@@ -86,7 +86,7 @@
     width: 100vw;
     height: 100vh;
     /* background-color: #3498DB; */
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/sliderHeader/sliderHeader1.jpg");
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/sliderHeader/sliderHeader1.webp");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -130,7 +130,7 @@
 
 /* ======== PORTFOLIO SECTION========= */
 .portfolio-section{
-    background: url("../img/myProjectsBG.jpg");
+    background: url("../img/myProjectsBG.webp");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -271,7 +271,7 @@
     margin-left: 4%;
     padding-top: 90px;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)) ,url("../img/aboutmetrial.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)) ,url("../img/aboutmetrial.webp");
     background-size: cover; 
     background-position: center;
     background-attachment:fixed;

@@ -72,7 +72,6 @@ let loadingScreenfunc = ()=>{
 abtmebtn.addEventListener("click", ()=>{
     console.log("about me button worked");
     hidenShow(header, sectionPortfolio, skillSection, aboutmeSection);
-    aboutmeSection.style.marginTop= "117px";
     loadingScreenfunc();
 });
 
@@ -93,7 +92,7 @@ skillsbtn.addEventListener("click", ()=>{
 // CHANGING HEADER BACKGROUND IMAGE
 let headerElement = document.querySelector(".header-main-container");
 let headerBGcount = 1;
-let headerBGImgArray = ['./app/img/sliderHeader/sliderHeader1.jpg', './app/img/sliderHeader/sliderHeader2.jpg', './app/img/sliderHeader/sliderHeader3.jpg' , './app/img/sliderHeader/sliderHeader4.jpg' ];
+let headerBGImgArray = ['./app/img/sliderHeader/sliderHeader1.webp', './app/img/sliderHeader/sliderHeader2.webp', './app/img/sliderHeader/sliderHeader3.webp' , './app/img/sliderHeader/sliderHeader4.webp' ];
 setInterval(() => {
     if(headerBGcount >= 0 && headerBGcount < 3){
         headerElement.style.background = "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('"  +  headerBGImgArray[headerBGcount] + "')";
