@@ -12,7 +12,6 @@
     background-color: white;
     z-index: 10;
     box-shadow: 5px 0 30px rgba(0, 0, 0, 0.092);
-
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
