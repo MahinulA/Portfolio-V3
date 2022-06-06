@@ -11,6 +11,7 @@
     text-align: center;
     background-color: white;
     z-index: 10;
+    display: none;
     box-shadow: 5px 0 30px rgba(0, 0, 0, 0.092);
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
@@ -82,13 +83,13 @@
 
 /* ======== HEADER SECTION ========== */
 .header-main-container{
-    width: 100vw;
     height: 100vh;
     /* background-color: #3498DB; */
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/sliderHeader/sliderHeader1.webp");
+    /* background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/sliderHeader/sliderHeader1.webp"); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    position: relative;
 }
 .header-content-section{
     position: absolute;
@@ -125,7 +126,30 @@
 .hamberger-icon-mobile i{
     color: white;
 }
-
+.header-slider-inner-container{
+    position:absolute;
+    display: grid;
+    
+    grid-template-columns: 100% 100% 100% 100%;
+    grid-template-rows: 100%;
+    transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+}
+/* .header-slider-inner-container{
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+} */
+.header-slider-image{
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
 
 /* ======== PORTFOLIO SECTION========= */
 .portfolio-section{
@@ -136,9 +160,9 @@
     color: white;
     padding-bottom: 10vw;
 }
-.portfolio-section-h1, .portfolio-sub-title-text, .project-grid-container{
+/* .portfolio-section-h1, .portfolio-sub-title-text, .project-grid-container{
     margin-left: 4%;
-}
+} */
 
 .portfolio-section-h1{
     padding-top: 144px;
@@ -267,7 +291,6 @@
 
 /* ======== ABOUT ME SECTION =========== */
 .aboutmeSection {
-    margin-left: 4%;
     padding-top: 90px;
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)) ,url("../img/aboutmetrial.webp");
@@ -314,9 +337,9 @@
 .skills-section h1{
     padding-top: 90px;
 }
-.skills-section h1, .skills-flex-container{
+/* .skills-section h1, .skills-flex-container{
     margin-left: 4%;
-}
+} */
 .skills-flex-container{
     margin-top: 124px;
     display: flex; 
