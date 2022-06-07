@@ -12,6 +12,14 @@ closeHamBtn[0].addEventListener("click" , ()=>{
     let sideMenu = document.getElementsByClassName("side-menu-container");
     sideMenu[0].style.left = "-100%";
 }) ;
+const sideMenuLinksInit = document.querySelectorAll(".side-link");
+for(let counter = 0; counter < sideMenuLinksInit.length; counter++){
+    const sideMenuLinks = sideMenuLinksInit[counter];
+    sideMenuLinks.addEventListener("click", ()=>{
+        let sideMenu = document.getElementsByClassName("side-menu-container");
+        sideMenu[0].style.left = "-100%";
+    });
+}
 // MOBILE NAV FUNCTIONALITIES END
 
 
@@ -77,7 +85,6 @@ abtmebtn.addEventListener("click", ()=>{
 
 myworkbtn.addEventListener("click", ()=>{
     hidenShow(header, skillSection, aboutmeSection, sectionPortfolio);
-    document.querySelector(".portfolio-section-h1").style.marginTop = "30px";
     sectionPortfolio.style.paddingBottom ="300px";
     loadingScreenfunc();
 });
@@ -124,8 +131,8 @@ const secondSlider = "-100%";
 const thirdSlider = " -200%";
 const fourthSlider = "-300%"
 
-let sliderTracker = Math.floor((Math.random() * 4) + 1 ) ; //slider is set to one
-console.log(sliderTracker);
+let sliderTracker = 1; //slider is set to one
+
 
 const sliderFunctionalities = (upComingSlider,currentSliderPosition)=>{
     document.querySelector(".header-slider-inner-container").style.transform= `translate(${upComingSlider})`;
@@ -142,10 +149,6 @@ const sliderEngine =()=>{
         sliderFunctionalities(firstSlider, 1);
     } 
 }
-
-// gives a random slider
-sliderEngine();
-
 
 setInterval(()=>{
     sliderEngine();
