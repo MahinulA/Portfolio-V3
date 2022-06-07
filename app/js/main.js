@@ -12,14 +12,21 @@ closeHamBtn[0].addEventListener("click" , ()=>{
     let sideMenu = document.getElementsByClassName("side-menu-container");
     sideMenu[0].style.left = "-100%";
 }) ;
-const sideMenuLinksInit = document.querySelectorAll(".side-link");
-for(let counter = 0; counter < sideMenuLinksInit.length; counter++){
-    const sideMenuLinks = sideMenuLinksInit[counter];
-    sideMenuLinks.addEventListener("click", ()=>{
-        let sideMenu = document.getElementsByClassName("side-menu-container");
-        sideMenu[0].style.left = "-100%";
-    });
+
+let screenWidth = window.innerWidth;
+console.log(screenWidth);
+if(screenWidth <= 1000){
+    console.log("work");
+    const sideMenuLinksInit = document.querySelectorAll(".side-link");
+    for(let counter = 0; counter < sideMenuLinksInit.length; counter++){
+        const sideMenuLinks = sideMenuLinksInit[counter];
+        sideMenuLinks.addEventListener("click", ()=>{
+            let sideMenu = document.getElementsByClassName("side-menu-container");
+            sideMenu[0].style.left = "-100%";
+        });
+    }
 }
+
 // MOBILE NAV FUNCTIONALITIES END
 
 
