@@ -227,7 +227,9 @@
   -o-transform:translate(-50%, -50%);
 
 }
-
+.brief-intro{
+  box-shadow: 15px 15px 0 wheat;
+}
 .inner-brief-intro{
   height:100%;
   width: 100%;
