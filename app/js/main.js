@@ -123,15 +123,15 @@ const firstSlider = "0%";
 const secondSlider = "-100%";
 const thirdSlider = " -200%";
 const fourthSlider = "-300%"
+
 let sliderTracker = Math.floor((Math.random() * 4) + 1 ) ; //slider is set to one
 console.log(sliderTracker);
+
 const sliderFunctionalities = (upComingSlider,currentSliderPosition)=>{
     document.querySelector(".header-slider-inner-container").style.transform= `translate(${upComingSlider})`;
     sliderTracker =currentSliderPosition;
 }
-const SlidingSequence = Math.floor((Math.random() * 5) + 1 );
-console.log(SlidingSequence);
-setInterval(()=>{
+const sliderEngine =()=>{ 
     if(sliderTracker ==1){
         sliderFunctionalities(secondSlider, 2);
     }else if(sliderTracker ==2){
@@ -140,10 +140,16 @@ setInterval(()=>{
         sliderFunctionalities(fourthSlider, 4);
     }else if(sliderTracker ==4){
         sliderFunctionalities(firstSlider, 1);
-    }
-    
-}, fourSecond);
+    } 
+}
 
+// gives a random slider
+sliderEngine();
+
+
+setInterval(()=>{
+    sliderEngine();
+}, fourSecond);
 
 
 
