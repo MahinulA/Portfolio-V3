@@ -4,7 +4,9 @@
     box-sizing: border-box;
     text-rendering:geometricPrecision;
 }
-
+.disclaimer{
+    display:none;
+}
 
 html, body{
     font-size: 16px;

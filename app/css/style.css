@@ -180,17 +180,119 @@
   -o-transition: transform 1s;
 }
 
-/* .header-slider-inner-container{
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-} */
 .header-slider-image {
   object-fit: cover;
   width: 100%;
   height: 100vh;
+}
+.intro-btn{
+  border: none;
+  font-size: 16px;
+  padding: 20px 60px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 3px;
+  background-color: #c89850;
+  color: white;
+  box-shadow: 5px 5px 55px rgba(0, 0, 0, 0.292)k;
+  transition: background 0.5s, color 1s;
+  -webkit-transition: background 0.5s, color 1s;
+  -moz-transition: background 0.5s, color 1s;
+  -ms-transition: background 0.5s, color 1s;
+  -o-transition: background 0.5s, color 1s;
+}
+
+.intro-btn:hover{
+  color: #c89850;
+  background-color: white;
+}
+
+
+/* inner brief section */
+.brief-intro{
+  position: fixed;
+  padding: 1%;
+  display: none;
+  height: 500px;
+  width: 60%;
+  background-color: white;
+  z-index: 12;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  -webkit-transform:translate(-50%, -50%);
+  -moz-transform:translate(-50%, -50%);
+  -ms-transform:translate(-50%, -50%);
+  -o-transform:translate(-50%, -50%);
+
+}
+
+.inner-brief-intro{
+  height:100%;
+  width: 100%;
+  position: relative;
+}
+
+.brief-icon-close{
+  position: absolute;
+  top: 0;
+  right: 2%;
+  font-size: 35px;
+  color:black;
+  cursor: pointer;
+}
+
+.information-inner-container{
+  display: flex;
+  padding-top: 40px;
+}
+
+.information-item:first-of-type{
+  width: 30%;
+}
+
+.profile-pic{
+  margin-right: 20px;
+  object-fit: contain;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.information-item h2{
+  line-height: 60px;
+}
+.information-work-title{
+  margin-bottom: 30px;
+  font-style: italic;
+  font-weight: 600;
+}
+.information-aboutme{
+  width: 80%;
+}
+
+.skills-information{
+  margin-top: 4%;
+  font-size: 13px;
+}
+.skills-information i{
+  font-size: 40px; 
+  margin: 0 10px;
+}
+.skills-head{
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+  
 }
 
 /* ======== PORTFOLIO SECTION========= */
@@ -202,10 +304,6 @@
   color: white;
   padding-bottom: 10vw;
 }
-
-/* .portfolio-section-h1, .portfolio-sub-title-text, .project-grid-container{
-    margin-left: 4%;
-} */
 
 .portfolio-section-h1 {
   padding-top: 144px;
@@ -224,7 +322,6 @@
   -moz-transition: background-color 0.4s, color 0.7s;
   -ms-transition: background-color 0.4s, color 0.7s;
   -o-transition: background-color 0.4s, color 0.7s;
-
   position: absolute;
   margin-top: 60px;
   padding: 20px 40px;
@@ -252,8 +349,6 @@
 /* ============= */
 .portfolio-flex-container {
   margin-top: 64px;
-  /* display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20% ; */
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -541,6 +636,16 @@ MEDIA QUERIES
   }
 }
 
+@media only screen and (max-width: 1250px) {
+  /* header section */
+  .information-inner-container{
+    flex-wrap: wrap;
+  }
+  .information-item{
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
 
   /* --side menu -- */
@@ -576,6 +681,44 @@ MEDIA QUERIES
   .job-title-header {
     font-size: 14px;
   }
+
+  .intro-btn {
+    font-size: 14px;
+    padding: 17px 40px;
+    margin-top: 26px;
+  }
+
+  .brief-intro {
+    height: 100vh;
+    width: 100%;
+  }
+  .information-item:first-of-type {
+    width: 100%;
+  }
+
+  .information-item{
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin-right: 20px;
+    object-fit: contain;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: static;
+    left: 0%;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+}
+.information-aboutme {
+  width: 100%;
+}
 
   /* --portfolio section-- */
   .portfolio-sub-title-text {
@@ -658,7 +801,11 @@ MEDIA QUERIES
     font-size: 15px;
   }
 
-
+  .intro-btn {
+    font-size: 12px;
+    padding: 13px 40px;
+    margin-top: 26px;
+}
   /* --portfolio section-- */
   .portfolio-sub-title-text {
     width: 95%;
@@ -681,3 +828,4 @@ MEDIA QUERIES
     width: 97%;
   }
 }
+

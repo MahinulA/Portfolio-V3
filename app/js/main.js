@@ -95,34 +95,6 @@ skillsbtn.addEventListener("click", ()=>{
 });
 
 
-
-// // CHANGING HEADER BACKGROUND IMAGE
-// let headerElement = document.querySelector(".header-main-container");
-// let headerBGcount = 1;
-// let headerBGImgArray = ['./app/img/sliderHeader/sliderHeader1.webp', './app/img/sliderHeader/sliderHeader2.webp', './app/img/sliderHeader/sliderHeader3.webp' , './app/img/sliderHeader/sliderHeader4.webp' ];
-// setInterval(() => {
-//     if(headerBGcount >= 0 && headerBGcount < 3){
-//         headerElement.style.background = "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('"  +  headerBGImgArray[headerBGcount] + "')";
-//         headerElement.style.backgroundSize = "cover";
-//         headerElement.style.backgroundAttachment = "fixed";
-//         headerElement.style.backgroundPosition = "center";
-//         headerElement.style.transition = "background 0.4s";
-//         headerBGcount++;
-//     }else if(headerBGcount == 3){
-//         headerElement.style.background = "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('"  +  headerBGImgArray[headerBGcount] + "')";
-//         headerElement.style.backgroundSize = "cover";
-//         headerElement.style.backgroundAttachment = "fixed";
-//         headerElement.style.backgroundPosition = "center";
-//         headerElement.style.transition = "background 0.4s";
-//         headerBGcount =0;
-//     }
-// }, 8000);
-
-
-
-
-
-
 // CHANGING HEADER BACKGROUND IMAGE
 const sliderContainer = document.querySelector(".header-main-container");
 let fourSecond = 4000;
@@ -156,6 +128,16 @@ setInterval(()=>{
 
 
 
+
+// Inner information section
+let BriefIntroElement = document.querySelector(".brief-intro");
+let BriefSectionCloseButton = document.querySelector(".brief-icon-close");
+document.querySelector(".intro-btn").addEventListener("click", ()=>{
+    BriefIntroElement.style.display= "block";
+});
+BriefSectionCloseButton.addEventListener("click", ()=>{
+    BriefIntroElement.style.display= "none";
+});
 
 
 
